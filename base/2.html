@@ -25,6 +25,16 @@
         #content{
             color: red;
         }
+        /* main article  h2 {
+            font-size: 50px;
+        } */
+        main article > h2 {
+            font-size: 50px;
+        }
+        main article h2 ~ h1 {
+            font-size: 50px;
+            color: yellow;
+        }
     </style>
 </head>
 <body>
@@ -40,5 +50,25 @@
     <div id="content">
         id选中器
     </div>
+    <main>
+        <article>
+            <h2>
+                main article  h2
+            </h2>
+            <div>
+                <h2>
+                    main article > h2
+                </h2>
+            </div>
+            <h1>
+                main article ~ h2
+            </h1>
+            <div>
+                <h1>
+                    main article ~ h2
+                </h1>
+            </div>
+        </article>
+    </main>
 </body>
 </html>

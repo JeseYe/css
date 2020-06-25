@@ -1,0 +1,54 @@
+<!-- 属性选择器 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1[title] {
+            color: red;
+        }
+        h1[title='yeyard'] {
+            border: 1px solid green;
+        }
+        h1[title^='e'] {
+            border: 1px solid blue;
+        }
+        h1[title$='s'] {
+            border: 3px solid yellow;
+        }
+        h1[title*='kk'] {
+            border: 3px solid black;
+        }
+        h1[title~='bl'] {
+            border: 3px solid blue;
+        }
+        h1[title|='gd'] {
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <h1 title> 属性选择器 title</h1>
+            <h1 title='yeyard'> 属性选择器 title=yeard</h1>
+            <h1 title='eyeyardssd'> 属性选择器 title^=e</h1>
+            <h1 title='yeyards'> 属性选择器 title$=s</h1>
+            <h1 title='yeykkards'> 属性选择器 title*=kk</h1>
+            <h1 title='yeyarkkds'> 属性选择器 title*=kk</h1>
+            <h1 title='bl'> 属性选择器 title*=kk</h1>
+            <h1 title='bldd'> 属性选择器 title*=kk</h1>
+            <h1 title='gd'> 属性选择器 title*=kk</h1>
+            <h1 title='gd-aa'> 属性选择器 title*=kk</h1>
+            <aside>
+                <h2></h2>
+            </aside>
+            <h2>
+
+            </h2>
+        </article>
+    </main>
+</body>
+</html>

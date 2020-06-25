@@ -1,0 +1,33 @@
+<!--  首尾元素伪类选择器-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        article h1:first-child {
+            color: violet;
+        }
+        article > h2:last-of-type {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+        <article>
+            <h1>第一个</h1>
+            <h1>第二个</h1>
+            <h2>
+                儿子h2
+            </h2>
+            <h2>儿子最后一个h2</h2>
+            <div>
+                <h2>孙子h2</h2>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!-- 伪类 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link { /*冒号后面不能有空格*/
+            color: black;
+        }
+        a:visited { /*访问过了的*/
+            color: green;
+        }
+        a:active {
+            color: yellow;
+        }
+        a:focus { /*点击的瞬间*/
+            color: violet;
+        }
+        a:hover { /* 鼠标放上去*/
+            color: red;
+        }
+        input:focus {
+            color: red;
+            outline: none; /*外边的框*/
+            background: violet;
+        }
+        input:hover {
+            color: red;
+            background: yellow;
+        }
+        input:active {
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <input type="text">
+        <a href="http://www.yeyard.com">yeyard.com</a>
+    </main>
+</body>
+</html>

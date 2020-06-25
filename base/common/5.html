@@ -1,0 +1,42 @@
+<!-- 目标与根伪类及空元素的处理 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            color: violet;
+        }
+        div {
+            height: 300px;
+            border: solid 1px #ccc;
+        }
+        div:target{
+            color: red;
+        }
+        li {
+            border: solid 2px #eee;
+        }
+        li:empty{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <a href="#maodian">点我</a>
+    <article>
+        <li></li>
+        <li>
+            我是老二，老一没有内容不显示
+        </li>
+    </article>
+    <div>
+        <h1>:root</h1>
+    </div>
+    <div id="maodian">
+        锚点
+    </div>
+</body>
+</html>

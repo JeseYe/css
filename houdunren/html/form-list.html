@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h3>
+                表单
+            </h3>
+            <form>
+                FORM
+                一般情况下表单项要放在 FORM 内提交。
+            </form>
+            <form action="hd.php" method="POST">
+                <fieldset>
+                    <legend>测试</legend>
+                    <input type="text">
+                </fieldset>
+            </form>
+            <p>
+                使用 label 用于描述表单标题，当点击标题后文本框会获得焦点，需要保证使用的ID在页面中是唯一的。
+                <form action="hd.php" method="POST" novalidate>
+                    <label for="title">标题</label>
+                    <input type="text" name="title" id="title">
+                </form>
+            </p>
+            <p>
+                <div>
+                    NPUT
+                    文本框用于输入单行文本使用，下面是常用属性与示例。
+                    input type="text" name="title" required placeholder="请输入标题" maxlength="5" value="" size="100"
+                </div>
+                <form action="hd.php" method="POST" novalidate>
+                    <fieldset>
+                        <legend>文本框</legend>
+                        <input type="text" name="title" required placeholder="请输入标题" maxlength="5" value="" size="100">
+                    </fieldset>
+                </form>
+                <p>
+                    HIDDEN
+                    input type="hidden" name="id" value="1"
+                    <input type="hidden" name="id" value="1">
+                </p>
+                <p>
+                    <h3>
+                        提交表单
+                    </h3>
+                    <p>
+                        创建提交按钮可以将表单数据提交到后台，有多种方式可以提交数据如使用AJAX，或HTML的表单按钮。
+
+                        使用input构建提交按钮，如果设置了name值按钮数据也会提交到后台，如果有多个表单项可以通过些判断是哪个表单提交的。
+                        <input type="submit" name="submit" value="提交表单">
+                        <button type="submit">button提交表单</button>
+                    </p>
+                    <p>
+                        禁用表单
+                        通过为表单设置 disabled 或 readonly 都可以禁止修改表单，但 readonly表单的数据可以提交到后台。
+                        <input type="text" name="web" value="houdunren.com" readonly>
+                    </p>
+                    <p><h3>
+                        PATTERN
+                    </h3>
+                        <div>
+                            表单可以通过设置 pattern 属性指定正则验证，也可以使用各种前端验证库如 formvalidator 或 validator.js。
+                            <form action="">
+                                <input type="text" name="username" pattern="[A-z]{5,20}" 
+                                oninvalid="validate('请输入5~20位字母的用户名')">
+                                <button>提交</button>
+                            </form>
+                                
+                            <script>
+                                function validate(message) {
+                                    alert(message);
+                                }
+                            </script>
+                        </div>
+                        <select name="lesson">
+                            <option value="">== 选择课程 ==</option>
+                            <optgroup label="后台">
+                                <option value="php">PHP</option>
+                                <option value="linux">LINUX</option>
+                                <option value="mysql">MYSQL</option>
+                            </optgroup>
+                            <optgroup label="前台">
+                                <option value="php">HTML</option>
+                                <option value="linux">JAVASCRIPT</option>
+                                <option value="mysql">CSS</option>
+                            </optgroup>
+                    </select>
+                    <p>
+                        RADIO 收音机
+                        单选框指只能选择一个选项的表单，如性别的选择男、女、保密 只能选择一个。
+                        <fieldset>
+                            <legend>单选框</legend>
+                            <input type="radio" name="sex" value="boy" id="boy">
+                            <label for="boy">男</label>
+    
+                            <input type="radio" name="sex" value="girl" id="girl" checked>
+                            <label for="girl">女</label>
+                        </fieldset>
+                        
+                    </p>
+                    <fieldset>
+
+                        <legend>复选框</legend>
+                        <input type="checkbox" name="sex" value="boy" id="boy">
+                        <label for="boy">PHP</label>
+                
+                        <input type="checkbox" name="sex" value="girl" id="girl" checked>
+                        <label for="girl">MYSQL</label>
+                </fieldset>
+
+                <fieldset>
+                    <input type="date" step="5" min="2020-09-22" max="2025-01-15" name="datetime">
+                    <input type="week">
+                    <input type="month">
+                    <input type="datetime-local" name="datetime">
+                </fieldset>
+                    </p>
+                    <form action="" method="post">
+                        <input type="text" list="lesson">
+                        <datalist id="lesson">
+                          <option value="PHP">后台管理语言</option>
+                          <option value="CSS">美化网站页面</option>
+                          <option value="MYSQL">掌握数据库使用</option>
+                        </datalist>
+                      </form>
+                </p>
+                <p>
+                    <h3>描述列表 Description list</h3>
+                    <dl>
+                        <dt>开源产品</dt>
+                        <dd>hdcms内容管理系统</dd>
+                        <dd>hdjs前库组件库</dd>
+                        
+                        <dt>网站导航</dt>
+                        <dd>houdunren.com</dd>
+                        <dd>houdunwang.com</dd>
+                    </dl>
+                </p>
+            </p>
+        </div>
+    </main>
+</body>
+</html>

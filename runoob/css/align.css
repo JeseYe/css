@@ -1,0 +1,56 @@
+/* CSS 布局 - 水平 & 垂直对齐 */
+/* 元素居中对齐
+要水平居中对齐一个元素(如 <div>), 可以使用 margin: auto;。
+
+设置到元素的宽度将防止它溢出到容器的边缘。
+
+元素通过指定宽度，并将两边的空外边距平均分配： */
+
+.center {
+    margin: auto;
+    width: 60%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+/* 注意: 如果没有设置 width 属性(或者设置 100%)，居中对齐将不起作用。 */
+
+/* 要让图片居中对齐, 可以使用 margin: auto; 并将它放到 块 元素中: */
+img {
+    display: block;
+    margin: 0 auto;
+}
+/* 左右对齐 - 使用定位方式
+我们可以使用 position: absolute; 属性来对齐元素: */
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+/* 注释：绝对定位元素会被从正常流中删除，并且能够交叠元素。
+
+提示: 当使用 position 来对齐元素时, 通常 <body> 元素会设置 margin 和 padding 。 这样可以避免在不同的浏览器中出现可见的差异。
+
+当使用 position 属性时，IE8 以及更早的版本存在一个问题。
+如果容器元素（在我们的案例中是 <div class="container">）设置了指定的宽度，
+并且省略了 !DOCTYPE 声明，那么 IE8 以及更早的版本会在右侧增加 17px 的外边距。
+这似乎是为滚动条预留的空间。当使用 position 属性时，请始终设置 !DOCTYPE 声明： */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+ 
+.container {
+    position: relative;
+    width: 100%;
+}
+ 
+.right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    background-color: #b0e0e6;
+}

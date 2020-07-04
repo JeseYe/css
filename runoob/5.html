@@ -1,0 +1,27 @@
+<!-- CSS 创建 -->
+<!-- 当读到一个样式表时，浏览器会根据它来格式化 HTML 文档。 -->
+<!-- 如何插入样式表 -->
+<!-- 插入样式表的方法有三种:
+    外部样式表(External style sheet)
+    内部样式表(Internal style sheet)
+    内联样式(Inline style)
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/mystyle.css"> <!-- 浏览器会从文件 mystyle.css 中读到样式声明，并根据它来格式文档。 -->
+</head>
+<body>
+    
+</body>
+</html>
+
+<!-- 多重样式优先级
+    一般情况下，优先级如下：
+
+        内联样式）Inline style > （内部样式）Internal style sheet >（外部样式）External style sheet > 浏览器默认样式
+        注意：如果外部样式放在内部样式的后面，则外部样式将覆盖内部样式。
+-->

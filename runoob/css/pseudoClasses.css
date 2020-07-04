@@ -1,0 +1,31 @@
+/* CSS伪类是用来添加一些选择器的特殊效果。 */
+/* 语法
+伪类的语法：
+    selector:pseudo-class {property:value;}
+*/
+/* CSS类也可以使用伪类：
+    selector.class:pseudo-class {property:value;}
+*/
+
+/* anchor伪类
+在支持 CSS 的浏览器中，链接的不同状态都可以以不同的方式显示 */
+
+a:link {color:#FF0000;} /* 未访问的链接 */
+a:visited {color:#00FF00;} /* 已访问的链接 */
+a:hover {color:#FF00FF;} /* 鼠标划过链接 */
+a:active {color:#0000FF;} /* 已选中的链接 */
+/* 注意： 在CSS定义中，a:hover 必须被置于 a:link 和 a:visited 之后，才是有效的。
+
+注意： 在 CSS 定义中，a:active 必须被置于 a:hover 之后，才是有效的。
+
+注意：伪类的名称不区分大小写。 */
+
+/* 伪类和CSS类
+伪类可以与 CSS 类配合使用： */
+a.red:visited {color:#FF0000;}
+/* <a class="red" href="css-syntax.html">CSS 语法</a> */
+
+/* CSS :first-child 伪类
+您可以使用 :first-child 伪类来选择父元素的第一个子元素。
+
+注意：在IE8的之前版本必须声明<!DOCTYPE> ，这样 :first-child 才能生效。 */

@@ -1,0 +1,37 @@
+<!-- CSS 语法 -->
+<!-- CSS 规则由两个主要的部分构成：选择器，以及一条或多条声明:
+        选择器通常是您需要改变样式的 HTML 元素。
+        每条声明由一个属性和一个值组成。
+        属性（property）是您希望设置的样式属性（style attribute）。每个属性有一个值。属性和值被冒号分开。
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {background-color:yellow;}
+        h1   {font-size:36pt;}
+        h2   {color:blue;}
+        p    {margin-left:50px;}
+
+        /* CSS 注释 */
+       /*这是个注释*/
+        p
+        {
+        text-align:center;
+        /*这是另一个注释*/
+        color:black;
+        font-family:arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>这个标题设置的大小为 36 pt</h1>
+    <h2>这个标题设置的颜色为蓝色：blue</h2>
+
+    <p>这个段落的左外边距为 50 像素：50px</p> 
+</body>
+</html>

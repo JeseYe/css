@@ -1,0 +1,17 @@
+/* CSS 下拉菜单 */
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: teal;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px teal;
+    padding: 10px 10px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}

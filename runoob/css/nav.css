@@ -1,0 +1,21 @@
+ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+a:link, a:visited {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    background-color: #98bf21;
+    width: 120px;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+a:hover{
+    background-color: #7a98d3;
+}

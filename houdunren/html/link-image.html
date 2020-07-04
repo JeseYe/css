@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div>
+            <h3>
+                图像格式
+            </h3>
+            <p>
+                <ul>
+                    <li>
+                        网络带宽成本很高，图片处理在保证用户体验好的前提下，文件尺寸也要尽可能小
+                    </li>
+                    <li>
+                        图片属性静态文件，不要放在WEB服务器上，而放在云储存服务器上并使用CDN加速
+                    </li>
+                    <li>
+                        以JPEG类型优先使用，文件尺寸更小
+                    </li>
+                    <li>
+                        小图片使用PNG，清晰度更高，因为文件尺寸小，文件也不会太大
+                    </li>
+                    <li>
+                        网页图标建议使用css字体构建如 iconfont 或 fontawesome
+                    </li>
+                </ul>
+
+                <img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3984473917,238095211&fm=26&gp=0.jpg" alt="图片">
+                <a href="http://doc.houdunren.com" target="_blank" title="文档库">a标签</a>
+            </p>
+            <div>
+                <a href="https://www.houdunren.com" target="hdcms">
+                    在IFRAME中打开
+                </a>
+                <script>
+                    window.open('https://www.hdcms.com', 'hdcms');
+                </script>
+            </div>
+            <div>
+                <h3>锚点</h3>
+                <a href="#comment-1">跳转到评论区</a>
+                <div style="height: 1000px;"></div>
+
+                <div id="comment-1" style="background: green;">
+                    这是后盾人评论内容区
+                </div>
+                <a href="mailto:2300071698@qq.com">给后盾人发送邮件</a>
+                <a href="tel:99999999999">联系客服</a>
+                <a href="https://www.hdcms.com/HDCMS-201905072207.zip">下载HDCMS</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

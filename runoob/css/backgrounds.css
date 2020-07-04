@@ -1,0 +1,37 @@
+body {background-color:#b0c4de;}
+body {background-image:url('paper.gif');} /*默认情况下，背景图像进行平铺重复显示，以覆盖整个元素实体.*/
+body
+{
+background-image:url('gradient2.png');
+background-repeat:repeat-x;
+}
+body
+{
+background-image:url('img_tree.png');
+background-repeat:no-repeat;
+}
+body
+{
+background-image:url('img_tree.png');
+background-repeat:no-repeat;
+background-position:right top;
+}
+
+/* 背景- 简写属性
+    在以上实例中我们可以看到页面的背景颜色通过了很多的属性来控制。
+
+    为了简化这些属性的代码，我们可以将这些属性合并在同一个属性中.
+
+    背景颜色的简写属性为 "background":
+ */
+
+ body {background:#ffffff url('img_tree.png') no-repeat right top;}
+
+ /* 当使用简写属性时，属性值的顺序为：:
+        background-color
+        background-image
+        background-repeat
+        background-attachment 背景图像是否固定或者随着页面的其余部分滚动。
+        background-position
+    以上属性无需全部使用，你可以按照页面的实际需要使用. 
+*/

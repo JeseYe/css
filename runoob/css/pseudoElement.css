@@ -1,0 +1,65 @@
+/* CSS 伪元素
+CSS伪元素是用来添加一些选择器的特殊效果。
+*/
+
+/* 伪元素的语法：
+selector:pseudo-element {property:value;}
+CSS类也可以使用伪元素：
+selector.class:pseudo-element {property:value;}
+
+*/
+
+/* CSS3为了区分伪类和伪元素，已经明确规定了伪类用一个冒号来表示，而伪元素则用两个冒号来表示。
+但因为兼容性的问题，所以现在大部分还是统一的单冒号，但是抛开兼容性的问题，我们在书写时应该尽可能养成好习惯，区分两者。
+单冒号(:)用于css3伪类，双冒号(::)用于CSS3伪元素。伪元素由双冒号和伪元素名称组成。
+不过浏览器需要同时支持旧的已经存在的伪元素写法，比如:first-line、:first-letter、:before、:after等，
+而新的在CSS3中引入的伪元素则不允许再支持旧的单冒号的写法。 */
+
+/* :first-line 伪元素
+"first-line" 伪元素用于向文本的首行设置特殊样式。
+
+在下面的例子中，浏览器会根据 "first-line" 伪元素中的样式对 p 元素的第一行文本进行格式化： */
+
+p:first-line 
+{
+    color:#ff0000;
+    font-variant:small-caps;
+}
+
+/* "first-line" 伪元素只能用于块级元素。
+
+注意： 下面的属性可应用于 "first-line" 伪元素：
+    font properties
+    color properties 
+    background properties
+    word-spacing
+    letter-spacing
+    text-decoration
+    vertical-align
+    text-transform
+    line-height
+    clear
+*/
+
+/* 多个伪元素 */
+
+p:first-letter
+{
+    color:#ff0000;
+    font-size:xx-large;
+}
+p:first-line 
+{
+    color:#0000ff;
+    font-variant:small-caps;
+}
+
+h1:before 
+{
+    content:url(smiley.gif);
+}
+
+h1:after
+{
+    content:url(smiley.gif);
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="" type="text/css">
+    <style>
+        .box a{
+            display: inline-block;
+            border: solid 1px #ddd;
+            text-align: center;
+            padding: 10px 20px;
+            margin-right: 30px;
+        }
+        .margin h3{
+            border: solid 2px green;
+            width: 300px;
+            height: 50px;
+            margin: 0 auto;
+        }
+        .negative a{
+            border: solid 2px green;
+            margin-left: -20px;
+        }
+        /* .merge {
+
+        } */
+        .box-sizing div:nth-child(1){
+            width: 100px;
+            height: 50px;
+            padding: 50px;
+            background-color: red;
+        }
+        .box-sizing div:nth-child(2){
+            width: 100px;
+            height: 50px;
+            padding: 50px;
+            box-sizing: border-box;
+            background-color: teal;
+            margin-top: 50px;
+        }
+        .border-width span{
+            border-right-width: 30px;
+            border-right-style: solid;
+            border-right-color: black;
+        }
+        .border-radius span{
+            width: 100px;
+            height: 100px;
+            border: solid 3px red;
+            border-radius: 50%;
+            display: block;
+        }
+        .border-radius div{
+            border-radius: 50%;
+	        border-bottom: solid 2px red;
+        }
+        .border-radius em{
+            /* display: inline-block; */
+            margin-top: 20px;
+            border-radius: 50%;
+	        border-bottom: solid 5px red;
+            padding-bottom: 3px;
+        }
+        .outline div:nth-of-type(1){
+            border: solid 5px black;
+            height: 20px;
+            background-color: teal;
+            outline-style: dotted;
+            outline-width: 10px;
+            outline-color: red;
+        }
+        .outline div:nth-child(2){
+            border: solid 5px black;
+            height: 20px;
+            outline: yellow solid 5px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h3>盒子模型</h3>
+            <p class="box">
+                <a href="">MYSQL margin-right: 30px;</a>
+                <a href="">LINUX</a>
+                <a href="">PHP</a>
+            </p>
+        </section>
+        <section class="margin">
+            <h3>外边距 margin: 0 auto</h3>
+            <p>
+            </p>
+        </section>
+        <section>
+            <h3>负值设置</h3>
+            <p class="negative">
+                <a href="">负值</a>
+                <a href=""> margin-left: -50px;</a>
+            </p>
+        </section>
+        <section class="merge">
+            <h3>相邻元素的纵向外边距会进行合并 margin-bottom: 20px;</h3>
+            <h3>相邻元素的纵向外边距会进行合并</h3>
+        </section>
+        <section class="box-sizing">
+            <div>box</div>
+            <div>box-sizing: border-box;</div>
+        </section>
+        <section class="border-width">
+            <span></span>
+            <span></span>
+        </section>
+
+        <section class="border-radius">
+            <span></span>
+            <div>
+            </div>
+            <em>border-bottom: solid 2px red;</em>
+        </section>
+
+        <section >
+            <h3>轮廓线</h3>
+            <p>
+                元素在获取焦点时产生，并且轮廓线不占用空间。可以使用伪类 :focus 定义样式。
+                <ul>
+                    <li>轮廓线显示在边框外面</li>
+                    <li>轮廓线不影响页面布局</li>
+                </ul>
+            </p>
+            <p >
+                <div class="outline">
+                    <div>outline</div>
+                    <div>outline</div>
+                </div>
+
+            </p>
+        </section>
+    </main>
+</body>
+</html>

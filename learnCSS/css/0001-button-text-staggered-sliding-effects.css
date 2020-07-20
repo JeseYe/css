@@ -1,9 +1,9 @@
-html, body{
-    background-color: cornsilk;
-    height: 100%;
+html, body {
+    background-color: lemonchiffon;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
 }
 
 .box {
@@ -11,13 +11,13 @@ html, body{
     width: 300px;
     height: 60px;
     line-height: 60px;
-    font-size: 30px;
     text-align: center;
     overflow: hidden;
     cursor: pointer;
+    font-size: 30px;
 }
 
-.box span{
+.box span {
     display: inline-block;
     color: lightblue;
 }
@@ -28,8 +28,8 @@ html, body{
 
 .box span:nth-child(even){
     transform: translateY(100%);
-
 }
+
 .box span::before{
     content: attr(data-text);
     position: absolute;
@@ -39,7 +39,6 @@ html, body{
 .box span:nth-child(odd)::before{
     transform: translateY(100%);
 }
-
 .box span:nth-child(even)::before{
     transform: translateY(-100%);
 }
@@ -47,6 +46,6 @@ html, body{
 .box:hover span{
     transform: translateY(0);
 }
-.box span {
+.box span{
     transition: .5s;
 }

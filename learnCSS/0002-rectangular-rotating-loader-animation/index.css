@@ -1,0 +1,95 @@
+html, body{
+    background-color: black;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    /* background-color: wheat; */
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.loader span{
+    position: absolute;  /*span设置float：left/right;或position:absolute;后内部会将display属性变成：inline-block行级块元素  绝对定位元素拥有行内块特性。*/ 
+    box-sizing: border-box;
+    border: 10px solid dimgray;
+    border-radius: 2px;
+}
+
+.loader span:nth-child(1){
+    width: 100%;
+    height: 100%;
+}
+
+.loader span:nth-child(2){
+    width: 70%;
+    height: 70%;
+    margin: 15%
+}
+
+.loader span:nth-child(3){
+    width: 40%;
+    height: 40%;
+    margin: 30%
+}
+
+.loader span::before,  .loader span::after{
+    position: absolute;
+    content: '';
+    width: 10px;
+    /*calc() 函数用于动态计算长度值。
+    需要注意的是，运算符前后都需要保留一个空格，例如：width: calc(100% - 10px)；
+    任何长度值都可以使用calc()函数进行计算；
+    calc()函数支持 "+", "-", "*", "/" 运算；
+    calc()函数使用标准的数学运算优先级规则；
+    */
+    height: calc(50% + 10px); 
+    background-color: gold;
+}
+.loader span::before{
+    top: -10px;
+    left: -10px;
+}
+
+.loader span::after{
+    bottom: -10px;
+    right: -10px;
+}
+
+/* add animation*/
+@keyframes rotating{
+    from {
+        transform: rotateY(0);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+.loader span {
+    animation: rotating linear infinite;
+}
+
+.loader span:nth-child(1){
+    animation-duration: 4s;
+}
+.loader span:nth-child(2){
+    animation-duration: 2s;
+}
+.loader span:nth-child(3){
+    animation-duration: 1s;
+}
+
+.loader span:nth-child(1){
+    z-index: 3;
+}
+.loader span:nth-child(2){
+    z-index: 2;
+}
+.loader span:nth-child(1){
+    z-index: 1;
+}
